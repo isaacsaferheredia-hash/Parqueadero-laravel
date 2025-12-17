@@ -53,3 +53,32 @@ No se eliminan físicamente los registros.
 
 **Razón (1 línea):**  
 Se aplica borrado lógico mediante el campo `estado`, marcando los registros como INACTIVO para mantener el historial y la trazabilidad de la información.
+## 📸 Capturas del Sistema
+
+### Listado de vehículos
+![Listado de vehículos](capturas/listado.png)
+
+### Registro de vehículo
+![Registro de vehículo](capturas/capturaformularioregistrarvehiculo.png)
+
+### Vehículo registrado
+![Vehículo registrado](capturas/vehiculoregistrado.png)
+
+### Edición de vehículo
+![Edición de vehículo](capturas/capturaformulariovehicul.png)
+
+### Vehículo actualizado
+![Vehículo actualizado](capturas/vehiculoactualizado.png)
+
+### Eliminación de vehículo (borrado lógico)
+![Eliminación de vehículo](capturas/eliminarvehiculo.png)
+
+### Vehículo marcado como inactivo
+![Vehículo eliminado](capturas/vehiculoeliminado.png)
+
+### Borrado lógico en la base de datos
+![Borrado lógico en la base de datos](capturas/borradológicoenlabasededatos.png)
+
+### Vista móvil
+![Vista móvil](capturas/movil.png)
+
