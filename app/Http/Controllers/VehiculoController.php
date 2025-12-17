@@ -40,8 +40,10 @@ class VehiculoController extends Controller
     }
     public function destroy(Vehiculo $vehiculo)
     {
-        Vehiculo::deleteVehiculo($vehiculo);
+        Vehiculo::eliminarLogico($vehiculo);
+
         return redirect()->route('vehiculos.index')
             ->with('success', 'Vehículo eliminado.');
+
     }
 }

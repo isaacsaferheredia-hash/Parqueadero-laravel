@@ -12,9 +12,10 @@ class Vehiculo extends Model
         'tipo',
         'propietario',
         'observaciones',
+        'estado'
     ];
     static public function getVehiculos(){
-        return self::all();
+        return self::where('estado', 'ACTIVO')->get();
     }
     static public function getVehiculosbyId($id){
         return self :: find($id);
@@ -29,7 +30,10 @@ class Vehiculo extends Model
         return $vehiculo->update($data);
     }
 
-    static public function deleteVehiculo(Vehiculo $vehiculo){
-        $vehiculo -> delete();
+    static public function eliminarLogico(Vehiculo $vehiculo){
+        $vehiculo->estado = 'INACTIVO';
+        $vehiculo->save();
+
+        return $vehiculo;
     }
 }
